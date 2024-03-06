@@ -1,15 +1,22 @@
+import { Card, CardContent, Typography } from "@mui/material";
+
 const FeedCard = () => {
-    return (
-      <div className=" tw-flex tw-justify-center tw-items-center tw-flex-col tw-my-6 ">
-        
-        <div className="tw-border   tw-px-12 tw-py-4 tw-rounded-md tw-shadow-md tw-bg-slate-50 " >
-          <h2>Vimal Mudalagi</h2>
-          <h3>@vimalmudalagi</h3>
-          <p>14h coding for hours is fine, but what about health ?</p>
-        </div>
-      </div>
-    );
-  };
-  
-  export default FeedCard;
-  
+  return (
+    <Card className="tw-rounded-md tw-shadow-md tw-overflow-hidden tw-my-4 tw-mx-4 sm:tw-mx-0">
+      <CardContent className="tw-flex tw-flex-col tw-justify-between tw-py-4 tw-px-4 sm:tw-px-8 md:tw-px-12 lg:tw-px-16">
+        <Typography variant="h6" className="tw-font-bold">
+          Vimal Mudalagi
+        </Typography>
+        <Typography variant="subtitle1" className="tw-text-slate-500">
+          @vimalmudalagi
+        </Typography>
+
+        <Typography variant="body1" className="tw-text-slate-700">
+          14h coding for hours is fine, but what about health?
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default FeedCard;
