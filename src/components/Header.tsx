@@ -1,5 +1,5 @@
 import { AppBar, Box, Grid, styled, Toolbar, Typography } from "@mui/material";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+import Notifications from "@mui/icons-material/Notifications";
 import Avatar from "@mui/material/Avatar";
 const Icons = styled(Box)(({ theme }) => ({
   display: "none",
@@ -29,7 +29,7 @@ const Header = () => {
         </Grid>    
         <Grid item xs={1}>
           <Icons>
-            <NotificationsIcon />
+            <Notifications />
             <Avatar src="/static/images/avatar/1.jpg" />
          
           </Icons>
