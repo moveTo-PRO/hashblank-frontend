@@ -2,7 +2,7 @@ import { Card, CardContent, Typography } from "@mui/material";
 
 const FeedCard = () => {
   return (
-    <Card className="tw-rounded-md tw-shadow-md tw-overflow-hidden tw-my-4 tw-mx-4 sm:tw-mx-0">
+    <Card className="tw-rounded-md tw-shadow-md tw-overflow-hidden tw-my-4  sm:tw-mx-4">
       <CardContent className="tw-flex tw-flex-col tw-justify-between tw-py-4 tw-px-4 sm:tw-px-8 md:tw-px-12 lg:tw-px-16">
         <Typography variant="h6" className="tw-font-bold">
           Vimal Mudalagi
