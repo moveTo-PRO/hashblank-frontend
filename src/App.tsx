@@ -1,12 +1,12 @@
 import Header from "./components/Header";
-import Feeds from "./components/Feeds";
 import NavbarMobile from "./components/NavbarMobile";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Header />
-      <Feeds />
+      <Outlet />
       <NavbarMobile/>
     </>
   );

@@ -1,4 +1,4 @@
-import FeedCard from "./FeedCard";
+import FeedCard from "../components/FeedCard";
 
 const Feeds = () => {
   return (
