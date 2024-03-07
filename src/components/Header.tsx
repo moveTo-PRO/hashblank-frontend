@@ -1,15 +1,9 @@
-import { AppBar, Box, Grid, Toolbar, Typography } from "@mui/material";
-import { styled } from "@mui/material/styles";
+import { AppBar,  Box,  Grid, Toolbar, Typography } from "@mui/material";
+
 import Notifications from "@mui/icons-material/Notifications";
 import Avatar from "@mui/material/Avatar";
-const Icons = styled(Box)(({ theme }) => ({
-  display: "none",
-  alignItems: "center",
-  gap: "15px",
-  [theme.breakpoints.up("sm")]: {
-    display: "flex",
-  },
-}));
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <AppBar
@@ -19,7 +13,8 @@ const Header = () => {
       <Toolbar className="tw-flex tw-justify-evenly  tw-items-center">
         <Grid>
           <Typography variant="h5" className=" tw-font-bold">
-            #_ Hashblank
+            <Link to="/"> #_ Hashblank</Link>
+           
           </Typography>
         </Grid>
         <Grid className="sm:tw-hidden">
@@ -29,10 +24,10 @@ const Header = () => {
           />
         </Grid>
         <Grid item xs={1} className="sm:tw-hidden">
-          <Icons>
-            <Notifications />
-            <Avatar src="/static/images/avatar/1.jpg" />
-          </Icons>
+        <Box className=" tw-flex tw-items-center tw-gap-6">
+           <Link to="/notification"><Notifications /></Link> 
+           <Link to="/profile"> <Avatar src="/static/images/avatar/1.jpg" /></Link>
+            </Box>
         </Grid>
       </Toolbar>
     </AppBar>
